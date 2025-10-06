@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">z
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web site</title>
+  <style>
+    .gost{
+      color: white;
+      background-color: blue;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    button{
+      background-color: rgb(136, 181, 186); 
+      border-radius: 5px;
+      padding: 8px 8px;
+      border: none;
+      margin: 0px 2px;
+      cursor: pointer;
+    }
+    #salt{
+      padding: 4px;
+      border-radius: 2px;
+      margin-left: 0px;      
+    }
+  </style>
+</head>
+<body>
+  <div class="gost">
+    <h1>Trivia!</h1>
+  </div>
+  <h2>Part 1:Multiple choice</h2>
+  <hr>
+  <h3>Which state is the largest in Nigeria by land area?</h3>
+  <button id="ohk">Kano</button>
+  <button id="ohk1">Abuja</button>
+  <button id="ohk2">Imo</button>
+  <button id="nooo">Sokoto</button>
+  <p id="yes">  
+  <h2 class="hmm">Part 2:Free Response</h2>
+  <hr>
+  <h3>What is the capital city of Nigeria?</h3>
+  <input type="text"><button id="salt">check Answer</button>
+  <p id="gray"></p>
+  <h2>Part 3:Jamb Question</h2>
+  <hr>
+  <h3>When a stone and a Feather is Droped at The Same Time form The Same Height Which One Will Reach The Ground First </h3>
+  <button id="fool">The stone</button>
+  <button id="fool1">The feather</button>
+  <button id="fool2">Both of Them</button>
+  <button id="fool3">The will fly Away</button>
+  <p id="oga"></p>
+  <h2>part 4:Personal Question</h2>
+  <hr>
+  <h3>Have you Taken Your Bath</h3>
+  <button id="aka">Nna ehh</button>
+  <button id="aka1">Yes oo</button>
+  <button id="aka2">No oo</button>
+  <button id="aka3">Omo I won smell</button>
+  <p id="paw"></p>
+
+
+
+
+
+<script>
+  const nooo = document.getElementById("nooo")
+  nooo.addEventListener("click",()=>{
+    document.getElementById("yes").innerHTML="correct!"
+    nooo.style.background = "green"
+    yes.style.color = "green"
+  })
+  const ohk = document.getElementById("ohk")
+  ohk.addEventListener("click",()=>{
+    document.getElementById("yes").innerHTML="incorrect!"
+    ohk.style.background = "red"
+    yes.style.color = "red"
+  })
+  const ohk1 = document.getElementById("ohk1")
+  ohk1.addEventListener("click",()=>{
+    document.getElementById("yes").innerHTML="incorrect!"
+    ohk1.style.background = "red"
+    yes.style.color = "red"
+  })
+  const ohk2 = document.getElementById("ohk2")
+  ohk2.addEventListener("click",()=>{
+    document.getElementById("yes").innerHTML="incorrect!"
+    ohk2.style.background = "red"
+    yes.style.color = "red"
+  })
+  const fool = document.getElementById("fool")
+  fool.addEventListener("click",()=>{
+    document.getElementById("oga").innerHTML="incorrect!"
+    fool.style.background = "red"
+    oga.style.color = "red"
+  })
+  const fool1 = document.getElementById("fool1")
+  fool1.addEventListener("click",()=>{
+    document.getElementById("oga").innerHTML="incorrect!"
+    fool1.style.background = "red"
+    oga.style.color = "red"
+  })
+  const fool3 = document.getElementById("fool3")
+  fool3.addEventListener("click",()=>{
+    document.getElementById("oga").innerHTML="incorrect!"
+    fool3.style.background = "red"
+    oga.style.color = "red"
+  })
+  const fool2 = document.getElementById("fool2")
+  fool2.addEventListener("click",()=>{
+    document.getElementById("oga").innerHTML="correct!"
+    fool2.style.background = "green"
+    oga.style.color = "green"
+  })
+  const aka = document.getElementById("aka")
+  aka.addEventListener("click",()=>{
+    document.getElementById("paw").innerHTML="incorrect!"
+    aka.style.background = "red"
+    paw.style.color = "red"
+  })
+  const aka1 = document.getElementById("aka1")
+  aka1.addEventListener("click",()=>{
+    document.getElementById("paw").innerHTML="incorrect!"
+    aka1.style.background = "red"
+    paw.style.color = "red"
+  })
+  const aka2 = document.getElementById("aka2")
+  aka2.addEventListener("click",()=>{
+    document.getElementById("paw").innerHTML="incorrect!"
+    aka2.style.background = "red"
+    yes.style.color = "red"
+  })
+  const aka3 = document.getElementById("aka3")
+  aka3.addEventListener("click",()=>{
+    document.getElementById("paw").innerHTML="correct!"
+    aka3.style.background = "green"
+    paw.style.color = "green"
+  })
+</script>
+</body>
+</html>
